@@ -33,7 +33,7 @@ if (num >= 18) {
 /*
 const turno = prompt(
   "Qual turno você estuda? Digite: M (matutino) ou V (Vespertino) ou N (Noturno)"
-);
+).toUpperCase();
 
 if (turno === "M") {
   console.log("Bom Dia!");
@@ -45,7 +45,6 @@ if (turno === "M") {
   }
 }
 */
-
 //3.
 /*
 const turno = prompt(
@@ -79,3 +78,53 @@ if (genero === "fantasia" && preco < 15) {
   console.log("Escolha outro filme :(");
 }
 */
+
+//Desafio
+
+//1.
+/*
+const genero = prompt("Qual gênero de filme vc deseja assistir?").toLowerCase();
+const valor = prompt("Qual é o valor do ingresso?");
+const preco = Number(valor);
+
+if (genero === "fantasia" && preco < 15) {
+  const comida = prompt("Qual snack que você quer comprar?");
+
+  console.log("Bom filme!");
+  console.log(`Aproveite o seu ${comida}`);
+} else {
+  console.log("Escolha outro filme :(");
+}
+*/
+
+//2.
+const nomeCompleto = prompt("Qual o seu nome completo?");
+const tipoJogo = prompt(
+  "Qual o tipo de jogo? Digite:IN (internacional) ou DO (doméstico)."
+);
+const etapaJogo = prompt(
+  "Qual a etapa do jogo? Digite: SF indica semi-final; DT (decisão de terceiro lugar) ou FI (final)"
+);
+const categoria = prompt("Digite qual o número da categoria:");
+const ingresso = prompt("Quantos ingressos vc deseja?");
+
+const sf = {
+  categoria1: 1320,
+  categoria2: 880,
+  categoria3: 550,
+  categoria4: 220,
+};
+
+const dt = {
+  categoria1: 660,
+  categoria2: 440,
+  categoria3: 330,
+  categoria4: 170,
+};
+
+const fi = {
+  categoria1: 1980,
+  categoria2: 1320,
+  categoria3: 880,
+  categoria4: 330,
+};
